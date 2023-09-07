@@ -20,8 +20,6 @@ public class EnemySpawner : MonoBehaviour
 		{
 			Instantiate(_enemy, _spawnPoints[Random.Range(0, _spawnPoints.Length - 1)].position, Quaternion.Euler(0, Random.Range(0, 360), 0));
 
-			Debug.Log($"{_enemy.name} spawned");
-
 			yield return delay;
 		}
 	}
