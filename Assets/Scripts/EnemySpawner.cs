@@ -5,7 +5,6 @@ public class EnemySpawner : MonoBehaviour
 {
 	[SerializeField] private float _spawnDelay = 2;
 	[SerializeField] private Transform[] _spawnPoints;
-	[SerializeField] private Enemy _enemy;
 
 	private void Start()
 	{
@@ -18,7 +17,9 @@ public class EnemySpawner : MonoBehaviour
 
         while (true)
 		{
-			Instantiate(_enemy, _spawnPoints[Random.Range(0, _spawnPoints.Length - 1)].position, Quaternion.Euler(0, Random.Range(0, 360), 0));
+			SpawnPoint randomSpawnPoint = _spawnPoints[Random.Range(0, _spawnPoints.Length - 1)].GetComponent<SpawnPoint>();
+
+			randomSpawnPoint.InstantiateEnemy();
 
 			yield return delay;
 		}
