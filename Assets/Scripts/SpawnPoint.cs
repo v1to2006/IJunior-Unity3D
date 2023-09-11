@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class SpawnPoint : MonoBehaviour
 {
-    [SerializeField] private Enemy _enemy;
+    [SerializeField] private Enemy _enemyTemplate;
     [SerializeField] private Transform _targetPoint;
 
     public void InstantiateEnemy()
     {
-        Instantiate(_enemy, transform.position, Quaternion.Euler(0, Random.Range(0, 360), 0));
-        _enemy.GetComponent<Enemy>().SetTargetPoint(_targetPoint);
+        Instantiate(_enemyTemplate, transform.position, Quaternion.identity);
+        _enemyTemplate.SetTargetPoint(_targetPoint.position);
     }
 }

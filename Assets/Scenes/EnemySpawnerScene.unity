@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e34c06e31c22693468d7f0c912c93972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemy: {fileID: 5890033425314640303, guid: 2b5e26337994541439bf8bc5de2fbf3e, type: 3}
+  _enemyTemplate: {fileID: 5890033425314640303, guid: 2b5e26337994541439bf8bc5de2fbf3e, type: 3}
   _targetPoint: {fileID: 679427201}
 --- !u!1 &297850431
 GameObject:
@@ -528,7 +528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e34c06e31c22693468d7f0c912c93972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemy: {fileID: 5890033425314640303, guid: a1e63773cddf6a643a9f9443ac91491f, type: 3}
+  _enemyTemplate: {fileID: 5890033425314640303, guid: a1e63773cddf6a643a9f9443ac91491f, type: 3}
   _targetPoint: {fileID: 481321685}
 --- !u!1 &1158159544
 GameObject:
@@ -574,7 +574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e34c06e31c22693468d7f0c912c93972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemy: {fileID: 5890033425314640303, guid: 084fae026f48e1b4eaa8a3dee835d10f, type: 3}
+  _enemyTemplate: {fileID: 5890033425314640303, guid: 084fae026f48e1b4eaa8a3dee835d10f, type: 3}
   _targetPoint: {fileID: 1941502076}
 --- !u!1 &1179319747
 GameObject:
@@ -620,7 +620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e34c06e31c22693468d7f0c912c93972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemy: {fileID: 5890033425314640303, guid: 27009d6bef4aa7246b5e81e936a100be, type: 3}
+  _enemyTemplate: {fileID: 5890033425314640303, guid: 27009d6bef4aa7246b5e81e936a100be, type: 3}
   _targetPoint: {fileID: 1576620058}
 --- !u!1 &1212481714
 GameObject:
@@ -666,7 +666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e34c06e31c22693468d7f0c912c93972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemy: {fileID: 5890033425314640303, guid: 3a83f7b3adad7a34bb17a16e91b7577d, type: 3}
+  _enemyTemplate: {fileID: 5890033425314640303, guid: 3a83f7b3adad7a34bb17a16e91b7577d, type: 3}
   _targetPoint: {fileID: 625674619}
 --- !u!1 &1576620057
 GameObject:
