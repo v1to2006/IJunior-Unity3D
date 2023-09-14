@@ -7,7 +7,7 @@ public class SpawnPoint : MonoBehaviour
 
     public void InstantiateEnemy()
     {
-        Instantiate(_enemyTemplate, transform.position, Quaternion.identity);
-        _enemyTemplate.SetTargetPoint(_targetPoint.position);
+        Enemy enemy = Instantiate(_enemyTemplate, transform.position, Quaternion.identity);
+        enemy.SetTargetPoint(_targetPoint);
     }
 }

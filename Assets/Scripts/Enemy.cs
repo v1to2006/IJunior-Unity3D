@@ -4,9 +4,9 @@ public class Enemy : MonoBehaviour
 {
 	[SerializeField] private float _movementSpeed = 3;
 
-	private Vector3 _target = Vector3.zero;
+	private Transform _target;
 
-	public void SetTargetPoint(Vector3 targetPoint)
+	public void SetTargetPoint(Transform targetPoint)
 	{
 		_target = targetPoint;
 	}
@@ -18,8 +18,6 @@ public class Enemy : MonoBehaviour
 
 	private void Move()
 	{
-		Vector3 direction = (_target - transform.position).normalized;
-		transform.Translate(direction * _movementSpeed * Time.deltaTime);
-		Debug.Log(_target);
+		transform.position = Vector3.MoveTowards(transform.position, _target.position, _movementSpeed * Time.deltaTime);
 	}
 }
