@@ -1954,11 +1954,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawnDelay: 2
   _spawnPoints:
-  - {fileID: 1042611354}
-  - {fileID: 54638181}
-  - {fileID: 1179319748}
-  - {fileID: 1212481715}
-  - {fileID: 1158159545}
+  - {fileID: 1042611355}
+  - {fileID: 54638182}
+  - {fileID: 1179319749}
+  - {fileID: 1212481716}
+  - {fileID: 1158159546}
 --- !u!1 &2100250532
 GameObject:
   m_ObjectHideFlags: 0

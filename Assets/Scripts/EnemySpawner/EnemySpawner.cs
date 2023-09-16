@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+	[SerializeField] private SpawnPoint[] _spawnPoints;
 	[SerializeField] private float _spawnDelay = 2;
-	[SerializeField] private Transform[] _spawnPoints;
 
 	private void Start()
 	{
@@ -19,7 +19,7 @@ public class EnemySpawner : MonoBehaviour
 		{
 			SpawnPoint randomSpawnPoint = _spawnPoints[Random.Range(0, _spawnPoints.Length - 1)].GetComponent<SpawnPoint>();
 
-			randomSpawnPoint.InstantiateEnemy();
+			randomSpawnPoint.SpawnEnemy();
 
 			yield return delay;
 		}
