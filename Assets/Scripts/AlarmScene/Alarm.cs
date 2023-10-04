@@ -12,11 +12,13 @@ public class Alarm : MonoBehaviour
 
     public void Play()
     {
+        StopCurrentCoroutine();
         _volumeCoroutine = StartCoroutine(ChangeVolume(_maxVolume));
     }
 
     public void Stop()
     {
+        StopCurrentCoroutine();
         _volumeCoroutine = StartCoroutine(ChangeVolume(_minVolume));
     }
 
@@ -26,11 +28,14 @@ public class Alarm : MonoBehaviour
         _audioSource.volume = _minVolume;
     }
 
-    private IEnumerator ChangeVolume(float targetVolume)
+    private void StopCurrentCoroutine()
     {
         if (_volumeCoroutine != null)
             StopCoroutine(_volumeCoroutine);
+    }
 
+    private IEnumerator ChangeVolume(float targetVolume)
+    {
         if (_audioSource.volume == _minVolume)
             _audioSource.Play();
 
