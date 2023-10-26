@@ -1,14 +1,14 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class ScaleCapsule : MonoBehaviour
+public class TweenScaleAnimation : MonoBehaviour
 {
     private void Start()
     {
-        Scale();
+        PlayScaleAnimation();
     }
 
-    private void Scale()
+    private void PlayScaleAnimation()
     {
         Vector3 targetScale = new Vector3(2, 2, 2);
         float transitionTime = 2.0f;

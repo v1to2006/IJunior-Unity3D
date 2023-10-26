@@ -2,7 +2,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CapableText : MonoBehaviour
+public class TweenTextAnimation : MonoBehaviour
 {
     [SerializeField] private Text _text;
 

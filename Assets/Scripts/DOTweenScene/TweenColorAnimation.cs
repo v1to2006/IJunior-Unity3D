@@ -1,16 +1,16 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class ColorSphere : MonoBehaviour
+public class TweenColorAnimation : MonoBehaviour
 {
     [SerializeField] private Material _material;
 
     private void Start()
     {
-        ChangeColor();
+        PlayColorChangeAnimation();
     }
 
-    private void ChangeColor()
+    private void PlayColorChangeAnimation()
     {
         Color startColor = Color.yellow;
         Color targetColor = Color.red;

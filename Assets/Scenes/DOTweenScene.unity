@@ -239,9 +239,11 @@ GameObject:
   - component: {fileID: 223143966}
   - component: {fileID: 223143965}
   - component: {fileID: 223143964}
+  - component: {fileID: 223143969}
+  - component: {fileID: 223143968}
   - component: {fileID: 223143967}
   m_Layer: 0
-  m_Name: CapableCube
+  m_Name: Cube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -342,7 +344,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 223143962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8050d730ffa95ba4fb3b25529aeb028a, type: 3}
+  m_Script: {fileID: 11500000, guid: d7b65a2429c8e4c44a190ac4903c20ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &223143968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223143962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d37e88f15193664db854c3e94636879, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &223143969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223143962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb633e86c3931a47ac5d9b3d423695d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &379398918
@@ -359,7 +385,7 @@ GameObject:
   - component: {fileID: 379398920}
   - component: {fileID: 379398923}
   m_Layer: 0
-  m_Name: ScaleCapsule
+  m_Name: Capsule1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -965,7 +991,7 @@ GameObject:
   - component: {fileID: 1171362376}
   - component: {fileID: 1171362380}
   m_Layer: 0
-  m_Name: RotateCube
+  m_Name: Cube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1083,7 +1109,7 @@ GameObject:
   - component: {fileID: 1707696942}
   - component: {fileID: 1707696945}
   m_Layer: 0
-  m_Name: ColorSphere
+  m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1202,7 +1228,7 @@ GameObject:
   - component: {fileID: 2034336727}
   - component: {fileID: 2034336730}
   m_Layer: 0
-  m_Name: MoveSphere
+  m_Name: Sphere1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
